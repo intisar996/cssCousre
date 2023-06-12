@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+}
+.contect-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contect-img img:nth-child(2) {
+    display: none;
+  }
+  
+  .contect-img:hover img:nth-child(1){
+    display: none;
+  }
+  
+  .contect-img:hover img:nth-child(2)
+   {
+      display: block;
+  }
+
+  .contect-img:hover + .contect-img
+   {
+      display: block;
+  }
+
+  .contect-img .cat-image {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+  
+  .contect-img:hover .cat-image {
+    opacity: 1;
+  }
+  
+.contect-text {
+    padding-top: 101px;
+}
+
+.contect-text h2 {
+font-family: cursive;
+font-size: 4rem;
+}
+.contect-text p {
+line-height: 30px;
+margin-top: 20px;
+font-family: monospace;
+font-size: 18px;
+}
+.catone img {
+    width: 108px;
+    transform: rotate(92deg);
+    position: absolute;
+    top: 93px;
+    left: -45px;
+    animation: cat 2s linear 2s infinite;
+    -webkit-transform: rotate(92deg);
+    -moz-transform: rotate(92deg);
+    -ms-transform: rotate(92deg);
+    -o-transform: rotate(92deg);
+    -webkit-animation: cat 4s linear 2s infinite;
+}
+.cattow img {
+    width: 108px;
+    transform: rotate(179deg);
+    position: absolute;
+    top: 7px;
+    z-index: -1;
+    left: 400px;
+    animation: cat 2s linear 2s infinite;
+    -webkit-transform: rotate(179deg);
+    -moz-transform: rotate(179deg);
+    -ms-transform: rotate(179deg);
+    -o-transform: rotate(179deg);
+    -webkit-animation: cattow 4s linear 2s infinite;
+}
+
+.pets-group {
+    display: flex;
+}
+.pets-group img {
+    width: 200px;
+}
+.pets-group {
+    justify-content: center;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.one:hover, .tow:hover, .three:hover, .four:hover, .five:hover{
+    display: block;
+    transform: scale(3);
+    z-index: 1;
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+}
+.animal {
+    padding-top: 272px;}
+
+
+@keyframes cat {
+  0% {
+    left:-106px;
+  }
+    
+}
+@keyframes cattow {
+  0% {
+    top:-60px;
+  }
+    
+}

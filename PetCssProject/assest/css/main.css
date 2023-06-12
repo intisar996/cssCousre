@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #CCD5AE;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+
+.dogone img {
+    width: 200px;
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    animation: dog 8s linear 2s forwards;
+    -webkit-animation: dog 8s linear 2s forwards;
+}
+
+
+.loader {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+
+}
+
+.Myname {
+     position: absolute;
+     overflow: hidden;
+     width: fit-content;
+     top: calc(65% - 22px);
+     font-size: 40px;
+     right:10px;
+     font-family: 'Kavoon', display;
+     font-weight: 500;
+     animation: MynameAnimationspanOne 20s forwards;
+     -webkit-animation: MynameAnimationspanOne 20s forwards;
+}
+
+
+.contect-img:hover {
+
+}
+
+@keyframes MynameAnimationspanOne {
+    0% {
+      bottom: calc(20% - 48px);
+      right: calc(20% - 16px);  
+    }
+    50% {
+      bottom: calc(20% - 48px);
+      left: calc(40% - 16px);
+    }
+    100% {
+      bottom: calc(20% - 48px);
+      left: calc(50% - 168px);
+  } 
+  
+  }
+
+
+    @keyframes dog {
+        0% {
+            right: 121px;
+        }
+        25% {
+            right: 366px;
+        }
+        50% {
+            right: 773px;
+        }
+        100% {
+            right: 1000px;
+        }
+       
+        }
